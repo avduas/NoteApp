@@ -9,7 +9,7 @@ const Layout = () => {
   const handleLogout = () => {
     localStorage.removeItem('userId');
     setAuthenticated(false);
-    navigate('/login'); 
+    navigate('/login');
   };
 
   return (
@@ -23,7 +23,14 @@ const Layout = () => {
             <NavLink className='navlink' to='/profile'>
               Profile
             </NavLink>
-            <button onClick={handleLogout}>Logout</button>
+            <NavLink className='navlink' to='/login'
+              onClick={(e) => {
+                e.preventDefault(); 
+                handleLogout(); 
+              }}
+            >
+              Logout
+            </NavLink>
           </>
         ) : (
           <>
