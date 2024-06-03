@@ -1,0 +1,44 @@
+body {
+    color: #FFFFFF;
+}
+
+.changeName, .info , form {
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    margin-top: 52px;
+    margin-right: 500px;
+}
+
+form, .info {
+    align-items: center;
+} 
+
+.input, .button {
+    border-radius: 10px;
+}
+
+.input {
+    background-color: rgba(255, 255, 255, 0);
+    color: #FFFFFF;
+    width: 600px;
+    border-color: #ffffff;
+}
+
+.button {
+    margin-top: 10px;
+    margin-left: 500px;
+    width: 68px;
+    height: 34px;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #4d94ff;
+  }

@@ -1,0 +1,93 @@
+.tweetArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.textareaTweet {
+  position: relative;
+  width: 600px;
+  margin-bottom: 15px;
+}
+
+.textareaTweet textarea {
+  width: 100%;
+  height: 180px;
+  border-color: #cccccc;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 10px;
+  color: #cccccc;
+  padding: 15px;
+  resize: none;
+  background-color: #F5F4F4;
+}
+
+.textareaTweet button {
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+  width: 68px;
+  height: 34px;
+  border-radius: 10px;
+  background-color: #007bff;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.textareaTweet button:hover {
+  background-color: #4d94ff;
+}
+
+.savedTweet {
+  background-color: #343a40;
+  margin-top: 15px;
+  width: 600px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  word-wrap: break-word;
+}
+
+.title {
+  color: #6c757d;
+  margin: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.textTweet {
+  color: #ffffff;
+  margin: 0px 15px 15px 15px;
+}
+
+.boardTweets {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.textareaTweet button:disabled {
+  background-color: #ddd;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.loading {
+  color: #cccccc;
+}
+
+.charCountWarning {
+  position: absolute;
+  text-align: center;
+  bottom: 10px;
+  width: 400px;
+  left: 15px;
+  height: 34px;
+  border-radius: 10px;
+  background-color: #f5c6cb;
+  color: #721c24;
+  line-height: 34px;
+}
